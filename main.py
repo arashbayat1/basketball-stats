@@ -112,5 +112,5 @@ if heatmap:
     mask[np.triu_indices_from(mask)] = True
     with sns.axes_style("darkgrid"):
         fig, ax = plt.subplots(figsize=(7, 6))
-        ax = sns.heatmap(correlations, mask=mask, vmax=1, annot=True, linecolor="white" ,linewidths=.5,)
+        ax = sns.heatmap(correlations, mask=mask, vmax=1, linecolor="white" ,linewidths=.5,)
     st.pyplot(fig)
